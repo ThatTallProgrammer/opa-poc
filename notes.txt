@@ -2,4 +2,12 @@ Created separate state file and context for Terraform.
 
 Provision an EKS cluster with Terraform: https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks
 
-Copied 
+Copied Terraform example deployment and modified:
+    - VPC
+    - Subnet
+    - Nodegroup size
+
+EKS cluster took 20 minutes to deploy
+
+Configured kubectl
+aws eks update-kubeconfig --region us-east-1 --name opa-eks --alias opa-eks 
