@@ -69,6 +69,7 @@ module "eks" {
   }
 
   vpc_id     = data.aws_vpc.default.id
+  subnet_ids = ["subnet-87b14889"]
   # subnet_ids = module.vpc.private_subnets
 
   eks_managed_node_group_defaults = {
