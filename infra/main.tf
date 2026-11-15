@@ -81,8 +81,8 @@ module "eks" {
     apache_nodeport = {
       description = "Allow Apache NodePort"
       protocol    = "tcp"
-      from_port   = 80
-      to_port     = 80
+      from_port   = 30080
+      to_port     = 30080
       type        = "ingress"
       cidr_blocks = ["0.0.0.0/0"]
     }
