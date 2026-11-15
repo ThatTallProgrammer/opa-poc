@@ -1,1 +1,10 @@
 .terraform*
+
+# Helm
+charts/
+*.tgz
+*.prov
+
+# Local Helm overrides
+values.local.yaml
+values.*.local.yaml
