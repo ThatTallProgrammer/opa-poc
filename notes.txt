@@ -1,1 +1,5 @@
 Created separate state file and context for Terraform. 
+
+Provision an EKS cluster with Terraform: https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks
+
+Copied 
