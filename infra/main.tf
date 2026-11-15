@@ -77,6 +77,17 @@ module "eks" {
 
   }
 
+  node_security_group_additional_rules = {
+    apache_nodeport = {
+      description = "Allow Apache NodePort"
+      protocol    = "tcp"
+      from_port   = 80
+      to_port     = 80
+      type        = "ingress"
+      cidr_blocks = ["0.0.0.0/0"]
+    }
+  }
+
   eks_managed_node_groups = {
     one = {
       name = "ng-1"
