@@ -21,7 +21,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket       = "opa-gatekeeper-poc"
+    bucket       = "platform-eng-exploration  "
     key          = "terraform.tfstate" 
     region       = "us-east-1"
     encrypt      = true
