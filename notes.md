@@ -22,3 +22,9 @@ Added SG ingress rule to allow port 30080 for all inbound
 
 Able to hit Apache over public internet with \<host IP\>: 30080
 
+Added Gatekeeper via public helm repository: https://open-policy-agent.github.io/gatekeeper/website/docs/install/
+
+Controller manager was failing to schedule on my t3.small node due to low memory
+    - Scaled replicas to 1
+    - Set memory request to 128
+

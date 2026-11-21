@@ -92,7 +92,7 @@ module "eks" {
     one = {
       name = "ng-1"
 
-      instance_types = ["t3.small"]
+      instance_types = ["t3.medium"]
 
       min_size     = 1
       max_size     = 1
